@@ -1,0 +1,10 @@
+prendre lien ssh
+
+git branch laulau
+modification
+git add .
+git status
+git commit -m "mes couilles"
+git push origin laulau
+
+reshape

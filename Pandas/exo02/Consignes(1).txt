@@ -1,0 +1,36 @@
+Vous disposez du jeu de donnée suivant sur les voiture.
+Un data scientist souhaite créer un modèle pour estimer le prix d'une voiture.
+N'ayant pas beaucoup de temps, il vous embauche pour faire le nettoyage de données car il n'a pas de temps pour s'occuper de cette tâche.
+Il vous donne son entière confiance pour cette tâche fastidieuse.
+
+Voici ce que contiennent les données: 
+
+- id
+- company: marque de la voiture
+- color: couleur de la voiture:
+- wheel-base-style-circum-diam: diamètre de la roue (cm)
+- length: distance entre les roues avants et les roues arrières (cm)
+- nbSeats: adresse email du propriétaire
+- num-of-cylinders: nombre de cylindres
+- horsepower: pussance de chevaux
+- average-mileage: nombre de kilomètres parcourus
+- price: le prix en euros
+
+
+
+Questions:
+
+1. Trouver et lister tous les problèmes dans ce jeu de données
+2. Mettre en oeuvre toutes les méthodes de nettoyage pour obtenir le dataset le plus propre possible
+3. Exporter sous format .csv le nouveau dataset clean
+
+
+Questions Bonus (uniquement si vous avez finit les 3 premières questions):
+
+1. Afficher le détail de toutes les voitures de marque Toyota
+2. Si je possédais toutes les voitures estimables de ce dataset, à combien s'estimerait mon patrimoine automobile ?
+3. Quelle est la couleur la plus répandue ?
+4. Afficher le nom de la compagnie, le nombre de chevaux ainsi que le prix de la voiture la plus chère
+5. Afficher le nombre de voitures par compagnie
+6. Afficher pour chaque compagnie le prix de la voiture le plus élevé
+8. Trier toutes les voitures par prix

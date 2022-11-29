@@ -1,0 +1,37 @@
+Objectifs Data Cleaning:
+Vous êtes data scientist et un nouveau projet tombe sur votre bureau ; Trop bien, un sujet de Machine Learning !!
+Au moment de commencer le projet, vous importez le jeu de données. Sûr de vous, vous avez déjà en tête les différents modèles à appliquer.
+Manque de pot, les données sont inexploitables...
+
+Vous venez de vous retrouver dans une situation très connue des data scientist. Tout projet passe toujours par un travail sur la donnée.
+Avant de commencer à nettoyer un dataset, il est nécessaire de se poser des questions:
+- avoir un aperçu des données
+- Caractéristiques ? Type de données ? Valeurs manquantes ?
+- Données faussées ?
+- Présence de doublons ? outlier ?
+
+Après avoir faire cette première analyse, faisons des choix:
+- Recherche et remplacement/suppression des valeurs manquantes
+- Renommage des colonnes
+- Suppression des colonnes inutiles à l’analyse
+- Suppression des duplications 
+- Modification des types de données
+
+En travaillant sur le fichier cleaning.csv
+
+1. Explorez l’ensemble des données :
+ - Format
+ - Type de données
+ - Statistiques
+ - Repérage des valeurs manquantes et dupliquées
+
+2. Procédez à la modification des types de données que vous jugez pertinentes par rapport à la nature des données.
+
+3. Repérez les valeurs manquantes dans l’ensemble des données.
+Comptabiliser ces valeurs manquantes par colonnes. Supprime-t-on la colonne ? les lignes ?
+Procédez finalement à la suppression des valeurs manquantes par ligne et par colonne.
+Pour la colonne 'Shape Reported', remplacer les valeurs manquantes par la valeur par défaut ‘VARIOUS’.
+
+4. Repérer et supprimer les données dupliquées
+5. Renommer les colonnes 'Shape Reported', 'Colors Reported' respectivement en 'Forme' et 'Couleur'
+6. Réindexer les données selon l’ordre suivant : 'City', 'Forme', 'Couleur','State','Time'

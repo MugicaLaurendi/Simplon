@@ -1,0 +1,33 @@
+Récupérer le dataset de akinator.
+
+CORRECTION : a1 = 0.4 et b1 = -27
+            a2 = 0.9 et b2 = -120
+
+Tracer la taille des pieds (que l'on appelera y_mes) en fonction de la taille (que l'on appelera x).
+
+Ajouter la colonne y1 = a1 x + b1 avec a1 = -4 et b1 = 3
+
+Ajouter la colonne y2 = a2 x + b2 avec a2 = -5 et b2 = 4
+
+Tracer la droite y1 = ax1 x + b2 avec a1 = -4 et b1 = 3
+
+Tracer la droite y2 = a1 x + b2 avec a2 = -5 et b2 = 4
+
+Calculer le R2 associé aux colonne y_mes et y1
+
+Calculer le R2 associé aux colonne y_mes et y2
+
+Lequel est le plus grand?
+
+Tracer la droite de régression linéaire grace à la fonction regplot de Seaborn
+
+Utiliser statsmodels.api pour déterminer les coefficient a et b de la fonction y = a x + b
+
+https://www.statsmodels.org/stable/regression.html
+
+Optionnel: Pour a compris entre [-1, 9] et b compris [0, 10], calculer R2
+
+Tracer R2 sur un graphique en 3D en fonction de a et b
+
+https://matplotlib.org/2.0.2/mpl_toolkits/mplot3d/tutorial.html
+https://matplotlib.org/2.0.2/mpl_examples/mplot3d/surface3d_demo.py

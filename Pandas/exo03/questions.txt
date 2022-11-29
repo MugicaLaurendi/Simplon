@@ -1,0 +1,35 @@
+Question 1 : Please review the quality of the data, describe the data you are working on and present any issues
+	- To do for artworks.csv
+
+Question 2 : Draw a graph that would help us to understand more clearly the dataset
+
+Question 3 : Let suppose you are a data scientist. You might consider cluster this dataset to get for example different clusters.
+Which relevant transformations / data cleaning operations would you do before ?
+
+Indications:
+1. Are all the columns useful ?
+2. What you are going to do on elements from artists table is called feature engineering:
+	- get actual age or death age
+	- is the artist alived : create a new column and sets 1 if it'is alived otherwise 0.
+	- if possible, calculate the volumes of the artwork
+	- Count number of elements inside 'Name_caller' and print the result inside a new column
+
+
+3. On artworks table:
+	- Acquisition date : transformed in another format
+	- delete lines/columns ?
+	- fill missing info ?
+
+
+Bonus:
+- Draw 2 easy other graphs that are useful to understand the dataset
+- Is it possible to create a unify dataset, from the two files mentioned above ? If possible, do it and create a .csv file
+- Clean artists.csv
+
+NB:
+You have to use the following methods:
+.describe()
+.unique()
+.fillna()
+.dropna()
+.apply()

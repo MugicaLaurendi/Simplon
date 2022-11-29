@@ -1,0 +1,20 @@
+Charger le dataset 'movie_metadata.csv'
+
+Regarder s'il ya des valeurs nulles dans le dataset
+
+Si oui, remplacer les valeurs nulles par des 0
+
+Tracer la "heatmap" des correlations entre les colonnes
+
+Identifier les colonnes qui sont soit des int64 et float64
+
+Diviser le dataset en deux datasets plus petits (un de 70%, qu'on appelera "train" et un de 30% qu'on apelera "test" du dataset initial) avec la methode train_test_split
+
+Choisir la colonne "imdb_score" comme target et toutes les autres comme features, et donc définir y_train, X_train, y_test et X_test
+
+Utiliser le model linear_model.LinearRegression() de sklearn pour faire la régression linéaire
+
+Définir le model
+Donner X_train et y_train au model pour qu'il s'entraine
+Regarder le score du modèle pour X_train et y_train
+Regarder le score du modèle pour X_test et y_test
