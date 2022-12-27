@@ -1,12 +1,10 @@
-match lang:
-    case "JavaScript":
-        print("You can become a web developer.")
+import os
+l = ["ab", "df"]
+os.system(f"echo {l}")
 
-    case "Python":
-        print("You can become a Data Scientist")
+a = input("project name :")
+os.system(f"echo {a}")
 
-    case "PHP":
-        print("You can become a backend developer")
-
-    case "Solidity":
-        print("You can become a Blockchain developer")
+os.system(f"mkdir {a}")
+os.system(f"mkdir {a}/scripts")
+os.system(f"touch {a}/bob.py")

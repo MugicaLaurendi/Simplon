@@ -1,0 +1,11 @@
+setup.py
+scripts/hello
+scripts/salem
+tips/__init__.py
+tips/model.py
+tips/preprocessing.py
+tips_demo.egg-info/PKG-INFO
+tips_demo.egg-info/SOURCES.txt
+tips_demo.egg-info/dependency_links.txt
+tips_demo.egg-info/requires.txt
+tips_demo.egg-info/top_level.txt

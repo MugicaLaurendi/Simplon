@@ -1,0 +1,51 @@
+#!python
+# -- coding: utf-8 --
+import os
+
+project_name = input("project name :")
+
+os.system(f"mkdir {project_name}")
+os.system(f"mkdir {project_name}/{project_name}")
+os.system(f"mkdir {project_name}/scripts")
+
+os.system(f"touch {project_name}/requirements.txt")
+
+requirements = ["numpy","pandas","seaborn","sklearn","matplotlib"]
+os.system(f"echo {project_name}/{requirements}")
+
+add_lib = input("add library ? [y/n] :")
+
+while add_lib == "y" :
+    lib = input("add :")
+    requirements.append(lib)
+    add_lib = input("add library ? [y/n] :")
+
+
+for i in  requirements :
+    os.system(f"echo {i} >> {project_name}/requirements.txt")
+
+os.system(f"touch {project_name}/setup.py")
+setup = open(f'{project_name}/setup.py','w')
+
+setup.write(f"""
+from setuptools import setup
+from setuptools import find_packages
+
+with open('requirements.txt') as f:
+    content = f.readlines()
+    requirements = [x.strip() for x in content if 'git+' not in x]
+
+setup(
+    name='{project_name}',
+    version='1.0',
+    packages=find_packages(),
+    description="",
+    author=...,
+    author_email='',
+    scripts=['scripts/'],
+    install_requires=requirements
+    )
+        """)
+
+
+os.system(f"touch {project_name}/{project_name}/__init__.py")

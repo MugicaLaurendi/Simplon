@@ -15,14 +15,3 @@ def main() :
     print("- identify yourself : client, technician")
 
     input = input()
-
-    if input == "technician" :
-
-        technician.
-    else :
-
-
-
-
-
-main()
