@@ -10,8 +10,6 @@ import requests
 Evidemment cette API est un lien direct vers SWAPI :heart:
 Ce streamlit est un exercice
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
 
 """
 
