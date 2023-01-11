@@ -10,7 +10,7 @@ model = pickle.load(open("pipline.pkl","rb"))
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Hello": "to Win World"}
 
 
 @app.get("/items/{item_id}")
