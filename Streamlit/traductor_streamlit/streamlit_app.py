@@ -4,8 +4,6 @@ import math
 import pandas as pd
 import streamlit as st
 import requests
-
-import youtube_dl
 import openai
 import deepl
 
