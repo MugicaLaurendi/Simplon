@@ -15,7 +15,7 @@ Ce streamlit est un exercice
 
 result_count = []
 
-data = st.file_uploader("Upload a audio file to translate", type=["mp3"])
+data = st.file_uploader("Upload a audio file to translate", type=["mp3","jpeg"])
 
 #response = requests.get(f"https://swapi.dev/api/{option}/").json()
 
