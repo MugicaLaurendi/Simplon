@@ -13,10 +13,9 @@ Ce streamlit est un exercice
 
 """
 file = st.file_uploader("Upload a audio file to translate", type=["mp3"])
-
+st.write(file)
 #response = requests.get(f"https://swapi.dev/api/{option}/").json()
 if file is not None :
-    st.write(file)
     st.write("a")
     audio_file= open(file, "rb")
     st.write("b")
