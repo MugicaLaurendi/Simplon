@@ -5,9 +5,9 @@ import pandas as pd
 import streamlit as st
 import requests
 """
-# Bienvenue sur mon API starwars
+# Bienvenue sur traductor from audio
 
-Evidemment cette API est un lien direct vers SWAPI :heart:
+Evidemment cette API est un lien direct vers whisper OpenAI et DeepL :heart:
 Ce streamlit est un exercice
 
 
