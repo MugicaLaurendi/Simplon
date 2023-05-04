@@ -19,9 +19,9 @@ st.write(file)
 if file is not None :
 
     bufferedReader = io.BufferedReader(file)
-    file = bufferedReader
+    audio_file = bufferedReader
     st.write("a")
-    audio_file= open(file, "rb")
+    #audio_file= open(file, "rb")
     st.write("b")
     openai.api_key = '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'
     st.write("1")
