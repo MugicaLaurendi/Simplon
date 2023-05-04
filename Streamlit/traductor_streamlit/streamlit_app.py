@@ -15,49 +15,9 @@ Ce streamlit est un exercice
 
 result_count = []
 
-option = st.selectbox(
-    'Choose category :',
-    ('','people', 'starships', 'planets'))
+
+
+
+data = st.file_uploader("Upload a Dataset", type=["csv", "txt"])
 
 response = requests.get(f"https://swapi.dev/api/{option}/").json()
-
-
-
-if option != '' :
-
-    ###
-
-    searched = st.text_input(f"Search in {option}")
-
-    st.write(f'{len(result_count)} results')
-
-
-    for i in response["results"] :
-
-        if searched != '' :
-
-            name = i["name"].lower()
-            is_in = name.find(searched)
-
-            if is_in >= 0 :
-                result_count.append(i["name"])
-                st.write("---------------")
-
-                for y in i :
-
-                    if y == "name" :
-                        st.write(f"### {i[y]}")
-
-                    else :
-                        st.write(f"{y} : {i[y]}")
-        else :
-            result_count.append(i["name"])
-            st.write("---------------")
-
-            for y in i :
-
-                    if y == "name" :
-                        st.write(f"### {i[y]}")
-
-                    else :
-                        st.write(f"{y} : {i[y]}")
