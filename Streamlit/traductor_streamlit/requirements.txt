@@ -2,3 +2,6 @@ altair
 pandas
 streamlit
 requests
+youtube_dl
+openai
+deepl

@@ -4,6 +4,11 @@ import math
 import pandas as pd
 import streamlit as st
 import requests
+
+import youtube_dl
+import openai
+import deepl
+
 """
 # Bienvenue sur traductor from audio
 
@@ -12,11 +17,13 @@ Ce streamlit est un exercice
 
 
 """
-
-result_count = []
-
-data = st.file_uploader("Upload a audio file to translate", type=["mp3","jpeg"])
+file = st.file_uploader("Upload a audio file to translate", type=["mp3"])
 
 #response = requests.get(f"https://swapi.dev/api/{option}/").json()
 
-print('data')
+audio_file= open(file, "rb")
+openai.api_key = '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'
+transcript = openai.Audio.transcribe("whisper-1", audio_file)
+file_convert = transcript["text"]
+
+st.write(file_convert)
