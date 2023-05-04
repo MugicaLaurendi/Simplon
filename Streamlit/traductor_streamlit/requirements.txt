@@ -2,4 +2,3 @@ altair
 streamlit
 openai
 deepl
-io
