@@ -21,6 +21,7 @@ file = st.file_uploader("Upload a audio file to translate", type=["mp3"])
 if file is not None :
     st.write("a")
     audio_file= open(file, "rb")
+    st.write("b")
     openai.api_key = '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'
     st.write("1")
     transcript = openai.Audio.transcribe("whisper-1", audio_file)
