@@ -17,4 +17,4 @@ result_count = []
 
 data = st.file_uploader("Upload a audio file to translate", type=["mp3"])
 
-response = requests.get(f"https://swapi.dev/api/{option}/").json()
+#response = requests.get(f"https://swapi.dev/api/{option}/").json()
