@@ -1,0 +1,44 @@
+.box
+{
+    /*background-color: blue;*/
+
+    display: flex;
+    /*justify-content: center;*/
+
+    margin: 2pc 15pc;
+    /*padding: 0px 0px;*/
+    overflow: hidden;
+
+    border-radius: 30px;
+    box-shadow: 0 0 2em black;
+  }
+
+.left
+{
+    /*background-color: green;*/
+
+    flex: 1;
+
+    padding: 1em;
+    
+}
+
+.img
+{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.right
+{
+    /*background-color: red;*/
+
+    flex: 1;
+
+    padding: 1em;
+}
+
+.info
+{
+    color: black;
+}

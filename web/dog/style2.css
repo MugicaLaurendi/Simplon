@@ -1,0 +1,26 @@
+.box
+{
+    /*background-color: blue;*/
+
+    display: flex;
+
+    margin: 2pc 20pc;
+    overflow: hidden;
+
+    border-radius: 40px;
+    box-shadow: 0 0 2em black;
+  }
+
+.img
+{
+    /*background-color: green;*/
+    flex-grow: 1;
+
+}
+
+.info
+{
+    /*background-color: red;*/
+
+    flex-grow: 1;
+}
