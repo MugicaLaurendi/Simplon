@@ -22,6 +22,7 @@ option = st.selectbox(
 response = requests.get(f"https://swapi.dev/api/{option}/").json()
 
 
+
 if option != '' :
 
     ###

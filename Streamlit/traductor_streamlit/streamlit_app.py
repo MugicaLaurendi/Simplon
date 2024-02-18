@@ -23,7 +23,8 @@ if file is not None :
     st.write("a")
     #audio_file= open(file, "rb")
     st.write("b")
-    openai.api_key = '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'
+    bob = st.text_input()
+    openai.api_key = str(bob)
     st.write("1")
     transcript = openai.Audio.transcribe("whisper-1", audio_file)
     st.write("2")

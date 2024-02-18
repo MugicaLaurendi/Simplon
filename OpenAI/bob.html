@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drag and Drop MP3</title>
+  <style>
+    #dropArea {
+      width: 300px;
+      height: 200px;
+      border: 2px dashed #ccc;
+      text-align: center;
+      padding: 40px;
+      font-size: 20px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="dropArea">Glissez et déposez un fichier MP3 ici</div>
+
+  <script>
+    var dropArea = document.getElementById('dropArea');
+
+    // Empêche le comportement par défaut lors d'un glisser-déposer
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+      dropArea.addEventListener(eventName, preventDefaults, false);
+      document.body.addEventListener(eventName, preventDefaults, false);
+    });
+
+    // Ajoute des classes CSS lorsque l'élément est survolé ou glissé-déposé
+    ['dragenter', 'dragover'].forEach(eventName => {
+      dropArea.addEventListener(eventName, highlight, false);
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+      dropArea.addEventListener(eventName, unhighlight, false);
+    });
+
+    // Gère le glisser-déposer de fichiers
+    dropArea.addEventListener('drop', handleDrop, false);
+
+    function preventDefaults(e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    function highlight() {
+      dropArea.classList.add('highlight');
+    }
+
+    function unhighlight() {
+      dropArea.classList.remove('highlight');
+    }
+
+    function handleDrop(e) {
+      var file = e.dataTransfer.files[0];
+      if (file.type === 'audio/mp3') {
+        uploadFile(file);
+      } else {
+        alert('Veuillez sélectionner un fichier MP3.');
+      }
+    }
+
+    function uploadFile(file) {
+      var formData = new FormData();
+      formData.append('file', file);
+
+      // Envoie le fichier à l'API
+      fetch('URL_DE_L_API', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Fichier MP3 envoyé avec succès.');
+        } else {
+          alert('Une erreur s\'est produite lors de l\'envoi du fichier.');
+        }
+      })
+      .catch(error => {
+        console.error('Erreur:', error);
+        alert('Une erreur s\'est produite lors de l\'envoi du fichier.');
+      });
+    }
+  </script>
+</body>
+</html>
